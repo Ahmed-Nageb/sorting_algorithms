@@ -1,8 +1,8 @@
 #include "sort.h"
 
 /**
- *quick_sort - Function that sorts an array of integers in ascending
- *order using the Quick sort
+ *selection_sort - Function that sorts an array of integers in ascending order
+ *order using the QSelection sort
  *@array: array of ints
  *@size: size of array
  */
