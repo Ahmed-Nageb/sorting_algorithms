@@ -7,7 +7,7 @@
  * @size: size of array
  */
 
-void quick_sort(int *array, size_t size)
+void selection_sort(int *array, size_t size)
 {
     size_t i, j, k;
     int temp;
@@ -16,7 +16,7 @@ void quick_sort(int *array, size_t size)
     {
         return;
     }
-    for (i = 0; i < size; i++)
+    for (i = 0; i < size - 1; i++)
     {
         for (j = size - 1, k = i + 1; j > i; j--)
         {
