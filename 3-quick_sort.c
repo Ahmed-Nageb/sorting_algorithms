@@ -57,7 +57,15 @@ size_t lomuto_partition(int *array, size_t size, ssize_t low, ssize_t high)
  */
 void quicksort(int *array, size_t size, ssize_t low, ssize_t high)
 {
+    if (lo < hi)
+    {
+        size_t p = lomuto_partition(array, size, lo, hi);
+
+        quicksort(array, size, lo, p - 1);
+        quicksort(array, size, p + 1, hi);
+    }
 }
+
 
 /**
  * quick_sort - calles quicksort.
@@ -72,3 +80,5 @@ void quick_sort(int *array, size_t size)
 		return;
 	quicksort(array, size, 0, size - 1);
 }
+
+
